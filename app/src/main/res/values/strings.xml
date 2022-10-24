@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Azure Odysseus</string>
+    <string name="facebook_app_id">492643819455733</string>
+    <string name="fb_login_protocol_scheme">fb492643819455733</string>
+    <string name="image_chooser">Choose Image</string>
+
+</resources>
