@@ -21,19 +21,32 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="32">
         <activity
-            android:name=".Endpoint"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:windowSoftInputMode="adjustResize"
+            android:name=".GameWorld2Loaded"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
+            android:name=".GameWorld1Loaded"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Endpoint"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Hub"
-            android:launchMode="singleInstance"
-            android:exported="true">
-
+            android:exported="true"
+            android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 

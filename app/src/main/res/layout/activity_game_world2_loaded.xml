@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgmain"
-    tools:context=".GameHubWorld1">
+    tools:context=".GameWorld2Loaded">
 
     <ImageView
         android:layout_width="300dp"
@@ -14,16 +14,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="50dp"
-        android:id="@+id/elem1"
+        android:id="@+id/ringFound"
+        android:onClick="forgeRingPower"
         android:src="@drawable/elem"/>
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:text="In the garden of odysseus was lost the ring of true power. You were hired to find it. In exchange odysseus will grant you one wish"
+        android:text="YES! you found it but odysseus asks you to extract the power of the ring. Click on it 85 times!"
         android:textAlignment="center"
         android:textAllCaps="true"
+        android:id="@+id/textMainRing"
         android:textColor="@color/black"
         android:textSize="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -32,22 +33,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.652" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:fontFamily="serif-monospace"
-        android:text="Take on the task!"
-        android:textSize="36dp"
-        android:onClick="moveToQuest"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.91" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
