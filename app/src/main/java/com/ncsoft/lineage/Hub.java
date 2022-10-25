@@ -46,7 +46,6 @@ public class Hub extends AppCompatActivity {
 
         mCurrentIndex.observe(this, newStringValue -> {
             // Update the UI, in this case, a TextView.
-
             startActivity(new Intent(getApplicationContext(), Sorter.class));
             handler.removeCallbacks(runnableCode);
             finish();

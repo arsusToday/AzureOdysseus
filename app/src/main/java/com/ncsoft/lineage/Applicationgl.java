@@ -24,11 +24,7 @@ public class Applicationgl extends Application {
         OneSignal.initWithContext(this);
         OneSignal.setAppId(ONESIGNAL_APP_ID);
 
-        Hawk.init(this).build();
-
         gltask.execute();
-
-
 
 
     }
