@@ -258,8 +258,8 @@ public class Endpoint extends AppCompatActivity {
 
 
         one = "sub_id_1=";
-        two = "sub_id_2=";
-        three = "sub_id_3=";
+        two = "deviceID=";
+        three = "ad_id=";
         four = "sub_id_4=";
         five = "sub_id_5=";
         six = "sub_id_6=";
