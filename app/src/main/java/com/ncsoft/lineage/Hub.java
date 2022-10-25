@@ -94,7 +94,6 @@ public class Hub extends AppCompatActivity {
                 executor.putString(NM, stMain);
                 executor.apply();
 
-                Log.d("dev_logs", stMain);
 
                 Log.d("NAMING TEST", "campaign attributed: " + stMain);
             }
