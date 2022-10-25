@@ -20,7 +20,7 @@ import java.util.Objects;
 public class Hub extends AppCompatActivity {
 
     public static final String NM = "nm";
-    public static final String DL = "dl";
+
     private static final String AF_DEV_KEY = "NEqquebBApzVHm3tnRLk3W";
     public MutableLiveData<String> mCurrentIndex = new MutableLiveData<>();
 
@@ -40,7 +40,6 @@ public class Hub extends AppCompatActivity {
             exec.apply();
         }
 
-        metaLnk();
         appsflyer();
 
 
@@ -129,24 +128,6 @@ public class Hub extends AppCompatActivity {
 
     }
 
-    public void metaLnk() {
 
-        AppLinkData.fetchDeferredAppLinkData(this,
-                appLinkData -> {
-
-                    if (appLinkData != null) {
-                        String params;
-                        params = appLinkData.getTargetUri().getHost();
-                        SharedPreferences prefs = getSharedPreferences("UTILITY", Context.MODE_PRIVATE);
-                        SharedPreferences.Editor executor = prefs.edit();
-                        executor.putString(DL, params);
-                        executor.apply();
-                    } else {
-                        Log.d("FB", "Error Code:");
-                    }
-
-                }
-        );
-    }
 
 }

@@ -1,7 +1,7 @@
 package com.ncsoft.lineage;
 
 import static com.ncsoft.lineage.Applicationgl.FUNC_ID;
-import static com.ncsoft.lineage.Hub.DL;
+import static com.ncsoft.lineage.MainActivity.DL;
 import static com.ncsoft.lineage.Hub.NM;
 
 import androidx.appcompat.app.AppCompatActivity;

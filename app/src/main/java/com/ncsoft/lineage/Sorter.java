@@ -1,9 +1,8 @@
 package com.ncsoft.lineage;
 
-import static com.ncsoft.lineage.Hub.DL;
-import static com.ncsoft.lineage.Hub.NM;
 
-import androidx.appcompat.app.AppCompatActivity;
+import static com.ncsoft.lineage.Hub.NM;
+import static com.ncsoft.lineage.MainActivity.DL;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,6 +10,7 @@ import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

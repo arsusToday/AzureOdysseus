@@ -2,19 +2,25 @@ package com.ncsoft.lineage;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+
+import com.facebook.applinks.AppLinkData;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
 public class MainActivity extends AppCompatActivity {
-
+    public static final String DL = "dl";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        metaLnk();
         new asyncFunc().execute();
     }
 
@@ -54,4 +60,25 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+    public void metaLnk() {
+
+        AppLinkData.fetchDeferredAppLinkData(this,
+                appLinkData -> {
+
+                    if (appLinkData != null) {
+                        String params;
+                        params = appLinkData.getTargetUri().getHost();
+                        SharedPreferences prefs = getSharedPreferences("UTILITY", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor executor = prefs.edit();
+                        executor.putString(DL, params);
+                        executor.apply();
+                    } else {
+                        Log.d("FB", "Error Code:");
+                    }
+
+                }
+        );
+    }
+
 }
