@@ -84,7 +84,7 @@ public class Hub extends AppCompatActivity {
                 Log.d("TESTING_ZONE", "af stat is " + conversionData.get("af_status"));
 
                 if(Objects.equals(conversionData.get("af_status"), "Organic")){
-                    stMain = "empty";
+                    stMain = "null";
                 } else
                 {
                 stMain = (String) conversionData.get("campaign");}
