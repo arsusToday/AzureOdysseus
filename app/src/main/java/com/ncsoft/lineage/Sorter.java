@@ -11,7 +11,6 @@ import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
-import com.orhanobut.hawk.Hawk;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

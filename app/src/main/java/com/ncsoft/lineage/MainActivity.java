@@ -6,9 +6,6 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
-
-import com.orhanobut.hawk.Hawk;
-
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 

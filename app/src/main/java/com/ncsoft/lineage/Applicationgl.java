@@ -7,7 +7,6 @@ import android.os.AsyncTask;
 
 import com.google.android.gms.ads.identifier.AdvertisingIdClient;
 import com.onesignal.OneSignal;
-import com.orhanobut.hawk.Hawk;
 
 public class Applicationgl extends Application {
     public static final String FUNC_ID = "funcId";
